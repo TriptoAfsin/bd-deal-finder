@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Output (generated files)
+output/
+
+# Batch artifacts (except scripts)
+batch/deal-additions/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Environment
+.env
+.env.local

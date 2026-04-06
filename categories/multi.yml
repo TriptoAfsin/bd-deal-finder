@@ -1,0 +1,20 @@
+category: multi
+description: "Cross-category marketplaces, deal aggregators, classifieds"
+
+keywords:
+  positive:
+    - flash sale, mega sale, campaign
+    - discount, coupon, promo code, voucher
+    - clearance, stock clearance
+    - bundle, combo, buy 1 get 1, BOGO
+    - cashback, reward
+  negative:
+    - scam, fraud, fake listing
+
+sources_notes:
+  daraz: "Largest BD marketplace. Flash sales are time-limited — verify timing."
+  othoba: "Good for home + lifestyle combos."
+  ajkerdeal: "Wide range but verify seller ratings."
+  bikroy: "Classifieds — user-to-user, no returns guarantee."
+  evaly: "Had major trust issues in 2021-2022. Use with extreme caution."
+  bdcouponhunter: "Aggregator only — redirects to actual stores."

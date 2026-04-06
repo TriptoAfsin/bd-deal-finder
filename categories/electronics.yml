@@ -1,0 +1,46 @@
+category: electronics
+description: "Brand official stores, authorized retailers — phones, wearables, audio, cameras"
+
+keywords:
+  positive:
+    - smartphone, mobile phone, feature phone
+    - smartwatch, smart band, fitness tracker
+    - earbuds, TWS, neckband, headphone
+    - camera, DSLR, mirrorless, action camera
+    - TV, smart TV, LED TV, OLED, QLED
+    - projector, home theater
+    - portable speaker, bluetooth speaker
+  negative:
+    - refurbished, used, demo unit, display piece
+
+budget:
+  default_max: 150000
+  segments:
+    phones: 60000
+    wearables: 30000
+    audio: 25000
+    cameras: 80000
+    TVs: 100000
+
+brands:
+  tier_1:
+    - Apple
+    - Samsung
+    - Sony
+    - LG
+    - Panasonic
+    - Canon
+    - Nikon
+    - Bose
+    - JBL
+  tier_2:
+    - Xiaomi
+    - Realme
+    - OnePlus
+    - Oppo
+    - Vivo
+    - Walton
+    - Tecno
+    - Infinix
+    - Nothing
+    - Google Pixel

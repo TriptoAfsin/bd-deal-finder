@@ -1,0 +1,73 @@
+category: tech
+description: "Computers, phones, peripherals, accessories, gadgets"
+
+keywords:
+  positive:
+    - laptop, notebook, ultrabook, gaming laptop
+    - phone, smartphone, mobile
+    - earbuds, headphone, earphone, TWS, ANC
+    - monitor, display, screen
+    - SSD, HDD, hard drive, storage, NVMe
+    - GPU, graphics card
+    - tablet, iPad
+    - smartwatch, smart band, fitness tracker
+    - keyboard, mechanical keyboard
+    - mouse, gaming mouse, trackpad
+    - router, mesh wifi, networking
+    - powerbank, power bank, charger, adapter
+    - cable, USB-C, lightning, HDMI
+    - webcam, microphone, streaming
+    - speaker, bluetooth speaker, soundbar
+    - pen drive, flash drive, memory card, SD card
+    - printer, scanner
+    - UPS, surge protector
+    - drone, action camera, GoPro
+  negative:
+    - refurbished, damaged, B-stock, used, second hand
+    - fake, replica, copy, clone
+
+budget:
+  default_max: 80000
+  segments:
+    accessories: 5000       # cables, adapters, cases
+    peripherals: 15000      # mouse, keyboard, webcam
+    audio: 25000            # earbuds, headphones, speakers
+    phones: 60000
+    laptops: 120000
+    desktops: 150000
+    tablets: 80000
+    storage: 15000
+    networking: 10000
+
+brands:
+  tier_1:
+    - Apple
+    - Samsung
+    - Sony
+    - Dell
+    - ASUS
+    - Lenovo
+    - HP
+    - LG
+    - Bose
+    - JBL
+    - MSI
+    - Corsair
+    - Intel
+    - AMD
+    - Nvidia
+  tier_2:
+    - Xiaomi
+    - Realme
+    - OnePlus
+    - Baseus
+    - Anker
+    - Logitech
+    - Razer
+    - HyperX
+    - TP-Link
+    - Ugreen
+    - Edifier
+    - QCY
+    - Haylou
+    - Oraimo

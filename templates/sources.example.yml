@@ -1,0 +1,20 @@
+# Deal Finder BD — Sources (Example)
+# Copy to config/sources.yml and customize.
+# See config/sources.yml for the full 60+ source list.
+
+sources:
+  - name: Star Tech
+    url: https://www.startech.com.bd
+    trust_tier: A
+    categories: [tech, electronics]
+    scan_paths: [/special-offer, /campaign]
+    type: retailer
+
+  - name: Daraz BD
+    url: https://www.daraz.com.bd
+    trust_tier: A
+    categories: [tech, fashion, lifestyle, electronics, home-appliances]
+    scan_paths: [/wow/flash-sale/, /deals/, /campaign/]
+    type: marketplace
+
+  # Add more sources following this format...

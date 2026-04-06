@@ -1,0 +1,51 @@
+category: lifestyle
+description: "Grooming, wellness, daily essentials, books, organic, health"
+
+keywords:
+  positive:
+    - skincare, moisturizer, sunscreen, serum, face wash
+    - shampoo, conditioner, hair oil, hair care
+    - body wash, soap, lotion
+    - perfume, deodorant, body spray
+    - makeup, lipstick, foundation, mascara
+    - supplement, vitamin, protein, health
+    - organic food, honey, ghee, nuts, dry fruits
+    - tea, green tea, coffee
+    - book, novel, self-help, textbook
+    - essential oil, aromatherapy
+    - fitness, yoga mat, resistance band
+    - water purifier, air purifier filter
+  negative:
+    - expired, near-expiry, damaged packaging
+
+budget:
+  default_max: 10000
+  segments:
+    grooming: 3000        # skincare, hair care
+    wellness: 5000        # supplements, fitness
+    books: 2000
+    essentials: 3000      # daily use items
+    organic: 5000         # organic food, health items
+    beauty: 8000          # premium skincare, makeup
+
+brands:
+  tier_1:
+    - The Body Shop
+    - Cetaphil
+    - CeraVe
+    - Nivea
+    - L'Oreal
+    - Maybelline
+    - Garnier
+    - Spa Ceylon
+    - Rokomari
+  tier_2:
+    - Shajgoj
+    - Khaasfood
+    - SSS Organic
+    - Miniso
+    - Arogga
+    - Himalaya
+    - Mamaearth
+    - Biotique
+    - Neutrogena

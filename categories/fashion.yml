@@ -1,0 +1,56 @@
+category: fashion
+description: "Clothing, shoes, accessories — local brands and marketplace fashion"
+
+keywords:
+  positive:
+    - shirt, t-shirt, polo, casual shirt
+    - panjabi, punjabi, kurta, fatua
+    - pants, trousers, jeans, chino
+    - saree, sari, salwar kameez, kurti
+    - jacket, hoodie, sweatshirt, blazer
+    - shoes, sneakers, boots, sandals, formal shoes
+    - watch, wristwatch
+    - bag, backpack, wallet, belt
+    - sunglasses, cap, hat
+    - perfume, fragrance, attar
+    - lungi, dhoti
+    - formal wear, suit
+  negative:
+    - replica, fake, copy, first copy
+    - used, second hand
+
+budget:
+  default_max: 15000
+  segments:
+    casual: 5000         # t-shirts, casual shirts
+    traditional: 8000    # panjabi, kurta, saree
+    formal: 10000        # shirts, blazers, suits
+    shoes: 12000
+    accessories: 3000    # belts, wallets, caps
+    premium: 20000       # watches, bags
+
+brands:
+  tier_1:
+    - Aarong
+    - Nike
+    - Adidas
+    - Levi's
+    - Allen Solly
+    - Ray-Ban
+    - Casio
+    - Titan
+  tier_2:
+    - Le Reve
+    - Sailor
+    - Cat's Eye
+    - Ecstasy
+    - Rang
+    - Deshal
+    - Dorjibari
+    - Kay Kraft
+    - Lubnan
+    - Wealthy
+    - Gentle Park
+    - Infinity
+    - Yellow
+    - Richman

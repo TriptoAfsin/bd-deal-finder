@@ -1,0 +1,63 @@
+category: home-appliances
+description: "AC, refrigerator, washing machine, kitchen, entertainment, power backup"
+
+keywords:
+  positive:
+    - AC, air conditioner, split AC, window AC
+    - refrigerator, fridge, freezer, deep freezer
+    - washing machine, front load, top load, dryer
+    - microwave, oven, electric oven, convection oven
+    - blender, mixer, grinder, juicer, food processor
+    - rice cooker, pressure cooker, electric cooker
+    - iron, steam iron, garment steamer
+    - fan, ceiling fan, table fan, exhaust fan, stand fan
+    - air purifier, humidifier, dehumidifier
+    - water purifier, water filter, RO purifier
+    - geyser, water heater, instant geyser
+    - induction cooker, electric stove, gas stove
+    - vacuum cleaner, robot vacuum
+    - LED TV, smart TV, 4K TV, Android TV
+    - home theater, soundbar, subwoofer
+    - generator, IPS, UPS, voltage stabilizer
+    - inverter, solar panel, battery
+    - dishwasher
+  negative:
+    - used, refurbished, demo unit, display unit, damaged
+
+budget:
+  default_max: 150000
+  segments:
+    small_appliances: 15000    # blender, iron, rice cooker
+    kitchen: 40000             # microwave, oven, cooker
+    cooling: 80000             # AC, fan, air purifier
+    laundry: 60000             # washing machine, dryer
+    entertainment: 100000      # TV, soundbar, theater
+    power: 50000               # IPS, UPS, generator, stabilizer
+    water: 25000               # purifier, geyser
+
+brands:
+  tier_1:
+    - Samsung
+    - LG
+    - Sony
+    - Panasonic
+    - Philips
+    - Sharp
+    - Hitachi
+    - Daikin
+    - Carrier
+    - General
+  tier_2:
+    - Walton
+    - Singer
+    - Vision
+    - Minister
+    - Transtec
+    - Konka
+    - Marcel
+    - Butterfly
+    - Electra
+    - Gree
+    - Haier
+    - Midea
+    - Hisense

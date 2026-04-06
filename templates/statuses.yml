@@ -1,0 +1,44 @@
+# Deal Finder BD — Canonical Deal Statuses
+# All deals in deals.md MUST use one of these statuses.
+
+statuses:
+  - name: Active
+    description: Deal confirmed live
+    color: green
+
+  - name: Expired
+    description: No longer available
+    color: gray
+
+  - name: Bought
+    description: User purchased this item
+    color: blue
+
+  - name: Watching
+    description: On watchlist, being monitored
+    color: yellow
+
+  - name: Suspicious
+    description: Discount too deep (>70%), needs verification
+    color: red
+
+  - name: "Possibly expired"
+    description: Older than 7 days, not re-verified
+    color: orange
+
+# Watchlist-specific statuses
+watchlist_statuses:
+  - name: Watching
+    description: Actively monitored every scan
+
+  - name: Matched
+    description: Found at least one deal, still watching
+
+  - name: Paused
+    description: Temporarily not scanning
+
+  - name: Fulfilled
+    description: User bought the item, stop watching
+
+  - name: Removed
+    description: Deleted from watchlist

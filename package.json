@@ -1,0 +1,17 @@
+{
+  "name": "deal-finder-bd",
+  "version": "1.0.0",
+  "description": "AI-powered Bangladeshi deal finder — scans 60+ BD e-commerce sources across 6 categories",
+  "type": "module",
+  "scripts": {
+    "merge": "node scripts/merge-deals.mjs",
+    "dedup": "node scripts/dedup-deals.mjs",
+    "verify": "node scripts/verify-sources.mjs"
+  },
+  "dependencies": {
+    "yaml": "^2.4.0"
+  },
+  "devDependencies": {},
+  "keywords": ["deals", "bangladesh", "e-commerce", "price-comparison"],
+  "license": "MIT"
+}

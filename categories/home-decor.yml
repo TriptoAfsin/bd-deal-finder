@@ -1,0 +1,55 @@
+category: home-decor
+description: "Furniture, interiors, home styling, lighting, curtains, rugs, wall art, storage"
+
+keywords:
+  positive:
+    - furniture, sofa, couch, sectional
+    - bed, mattress, bed frame, bunk bed
+    - dining table, dining set, chair, stool
+    - wardrobe, almirah, closet, dresser, chest of drawers
+    - bookshelf, shelf, rack, cabinet, showcase
+    - desk, office desk, computer table, study table
+    - TV stand, TV unit, console table
+    - coffee table, center table, side table, end table
+    - curtain, drape, blinds, window covering
+    - rug, carpet, mat, floor covering
+    - wall art, painting, poster, frame, canvas
+    - mirror, decorative mirror, wall mirror
+    - lamp, table lamp, floor lamp, pendant light, chandelier
+    - fairy lights, LED strip, decorative lights
+    - vase, planter, indoor plant, artificial plant
+    - cushion, throw pillow, bedsheet, comforter, duvet
+    - organizer, storage box, basket, container
+    - clock, wall clock, desk clock
+    - candle, candle holder, diffuser, incense
+    - kitchen rack, shoe rack, towel rack
+    - wallpaper, wall sticker, decal
+  negative:
+    - used, damaged, second hand, scratched, dented
+
+budget:
+  default_max: 80000
+  segments:
+    small_decor: 3000        # candles, vases, frames, clocks
+    soft_furnishing: 8000    # cushions, curtains, rugs, bedsheets
+    lighting: 10000          # lamps, fairy lights, pendants
+    storage: 15000           # shelves, racks, organizers
+    small_furniture: 25000   # side tables, stools, desks
+    large_furniture: 80000   # sofa, bed, dining set, wardrobe
+    premium: 150000          # high-end sets, imported pieces
+
+brands:
+  tier_1:
+    - Hatil
+    - Otobi
+    - Regal
+    - IKEA
+    - Navana
+  tier_2:
+    - Brothers Furniture
+    - Nurjahan
+    - Partex
+    - Akhtar Furnishers
+    - Wooden
+    - Shomee
+    - Home Decor BD

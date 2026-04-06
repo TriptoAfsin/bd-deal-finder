@@ -1,0 +1,77 @@
+# Deal Finder BD — User Profile
+# Customize your preferences, budgets, and scan settings.
+
+user:
+  name: "Tripto"
+  location: "Dhaka"
+  currency: "BDT"
+
+categories_of_interest:
+  - tech
+  - electronics
+  - fashion
+  - lifestyle
+  - home-appliances
+  - home-decor
+
+budgets:
+  # Maximum you'd typically spend per category (in BDT)
+  tech:
+    default_max: 80000
+    segments:
+      accessories: 5000
+      peripherals: 15000
+      phones: 60000
+      laptops: 120000
+      desktops: 150000
+  electronics:
+    default_max: 150000
+    segments:
+      phones: 60000
+      wearables: 30000
+      audio: 25000
+      cameras: 80000
+  fashion:
+    default_max: 15000
+    segments:
+      casual: 5000
+      formal: 10000
+      shoes: 12000
+      accessories: 3000
+  lifestyle:
+    default_max: 10000
+    segments:
+      grooming: 3000
+      wellness: 5000
+      books: 2000
+      essentials: 3000
+  home-appliances:
+    default_max: 150000
+    segments:
+      small_appliances: 15000
+      kitchen: 40000
+      cooling: 80000
+      laundry: 60000
+      entertainment: 100000
+      power: 50000
+  home-decor:
+    default_max: 80000
+    segments:
+      small_decor: 3000
+      soft_furnishing: 8000
+      lighting: 10000
+      storage: 15000
+      small_furniture: 25000
+      large_furniture: 80000
+
+scan:
+  interval: "12h"
+  min_score: 2.0
+  top_threshold: 4.0
+  suspicious_discount_threshold: 70  # % discount that triggers flag
+  staleness_days: 7                  # days before marking "Possibly expired"
+  dedup_window_hours: 24             # same URL+price within this window = skip
+
+notifications:
+  top_deal_alert: true
+  watchlist_match: true

@@ -1,0 +1,686 @@
+# Deal Finder BD — Master Source Registry
+# All curated BD e-commerce sources with metadata.
+# Trust tiers: A (verified/reliable), B (generally good), C (use with caution)
+
+sources:
+
+  # ============================================================
+  # TECH — Dedicated computer/gadget retailers
+  # ============================================================
+
+  - name: Star Tech
+    url: https://www.startech.com.bd
+    trust_tier: A
+    categories: [tech, electronics]
+    scan_paths:
+      - /special-offer
+      - /campaign
+    type: retailer
+
+  - name: Ryans Computers
+    url: https://www.ryanscomputers.com
+    trust_tier: A
+    categories: [tech, electronics]
+    scan_paths:
+      - /offer
+      - /campaign
+    type: retailer
+
+  - name: Techland BD
+    url: https://www.techlandbd.com
+    trust_tier: B
+    categories: [tech, electronics]
+    scan_paths:
+      - /offers
+    type: retailer
+
+  - name: UCC BD
+    url: https://www.ucc.com.bd
+    trust_tier: B
+    categories: [tech, electronics]
+    scan_paths:
+      - /offers
+    type: retailer
+
+  - name: Computer Village
+    url: https://www.computervillage.com.bd
+    trust_tier: B
+    categories: [tech]
+    scan_paths:
+      - /offer
+    type: retailer
+
+  - name: Binary Logic
+    url: https://www.binarylogic.com.bd
+    trust_tier: B
+    categories: [tech]
+    scan_paths:
+      - /offer
+    type: retailer
+
+  - name: GProjukti
+    url: https://www.gprojukti.com
+    trust_tier: B
+    categories: [tech, electronics]
+    scan_paths:
+      - /deals
+      - /offers
+    type: retailer
+
+  - name: Penguin BD
+    url: https://www.penguin.com.bd
+    trust_tier: B
+    categories: [tech]
+    scan_paths:
+      - /offer
+    type: retailer
+
+  - name: Gadget & Gear
+    url: https://gadgetandgear.com
+    trust_tier: B
+    categories: [tech, electronics]
+    scan_paths:
+      - /offers
+      - /flash-sale
+    type: retailer
+
+  - name: Apple Gadgets
+    url: https://www.applegadgets.com.bd
+    trust_tier: B
+    categories: [tech, electronics]
+    scan_paths:
+      - /offer
+    type: retailer
+
+  - name: Pickaboo
+    url: https://www.pickaboo.com
+    trust_tier: B
+    categories: [tech, electronics]
+    scan_paths:
+      - /campaign
+      - /deals
+    type: marketplace
+
+  - name: Skyland BD
+    url: https://www.skyland.com.bd
+    trust_tier: B
+    categories: [tech]
+    scan_paths:
+      - /offer
+    type: retailer
+
+  - name: Nexus BD
+    url: https://www.nexus.com.bd
+    trust_tier: B
+    categories: [tech, electronics]
+    scan_paths:
+      - /offers
+    type: retailer
+
+  - name: Global Brand
+    url: https://www.globalbrand.com.bd
+    trust_tier: B
+    categories: [tech, electronics]
+    scan_paths:
+      - /offer
+    type: retailer
+
+  - name: Smart Technologies
+    url: https://www.smart-technologies.com.bd
+    trust_tier: B
+    categories: [tech]
+    scan_paths:
+      - /offer
+    type: retailer
+
+  - name: Dazzle
+    url: https://www.dazzle.com.bd
+    trust_tier: B
+    categories: [tech, electronics]
+    scan_paths:
+      - /offers
+      - /deals
+    type: retailer
+
+  - name: Execute Sample
+    url: https://www.executesample.com
+    trust_tier: B
+    categories: [tech, electronics]
+    scan_paths:
+      - /offers
+    type: retailer
+
+  - name: Motion View
+    url: https://www.motionview.com.bd
+    trust_tier: B
+    categories: [tech, electronics]
+    scan_paths:
+      - /offers
+    type: retailer
+
+  # ============================================================
+  # ELECTRONICS — Brand official stores & authorized retailers
+  # ============================================================
+
+  - name: Walton BD
+    url: https://waltonbd.com
+    trust_tier: A
+    categories: [electronics, home-appliances]
+    scan_paths:
+      - /offers
+      - /campaign
+    type: brand_store
+
+  - name: Samsung BD
+    url: https://www.samsung.com/bd
+    trust_tier: A
+    categories: [electronics, home-appliances]
+    scan_paths:
+      - /offer
+      - /campaign
+    type: brand_store
+
+  - name: Xiaomi BD
+    url: https://www.mi.com/bd
+    trust_tier: A
+    categories: [electronics, tech]
+    scan_paths:
+      - /offer
+    type: brand_store
+
+  - name: Vivo BD
+    url: https://www.vivo.com/bd
+    trust_tier: B
+    categories: [electronics]
+    scan_paths:
+      - /offers
+    type: brand_store
+
+  - name: Oppo BD
+    url: https://www.oppo.com/bd
+    trust_tier: B
+    categories: [electronics]
+    scan_paths:
+      - /offers
+    type: brand_store
+
+  - name: Realme BD
+    url: https://www.realme.com/bd
+    trust_tier: B
+    categories: [electronics]
+    scan_paths:
+      - /offers
+    type: brand_store
+
+  - name: Transcom Digital
+    url: https://transcomdigital.com
+    trust_tier: A
+    categories: [electronics, home-appliances]
+    scan_paths:
+      - /offer
+      - /campaign
+    type: retailer
+
+  - name: Singer BD
+    url: https://singerbd.com
+    trust_tier: A
+    categories: [electronics, home-appliances]
+    scan_paths:
+      - /offer
+    type: retailer
+
+  - name: Esquire Electronics
+    url: https://esquireelectronics.com.bd
+    trust_tier: A
+    categories: [electronics, home-appliances]
+    scan_paths:
+      - /offer
+    type: retailer
+
+  - name: Rangs Electronics
+    url: https://www.rangsgroup.com
+    trust_tier: A
+    categories: [electronics, home-appliances]
+    scan_paths:
+      - /offer
+    type: retailer
+
+  - name: Best Electronics
+    url: https://www.bestelectronics.com.bd
+    trust_tier: B
+    categories: [electronics, home-appliances]
+    scan_paths:
+      - /offer
+    type: retailer
+
+  # ============================================================
+  # FASHION — BD fashion brands & marketplaces
+  # ============================================================
+
+  - name: Aarong
+    url: https://www.aarong.com
+    trust_tier: A
+    categories: [fashion, lifestyle]
+    scan_paths:
+      - /sale
+      - /new-arrivals
+    type: brand_store
+
+  - name: Le Reve
+    url: https://www.lereve.com.bd
+    trust_tier: B
+    categories: [fashion]
+    scan_paths:
+      - /sale
+    type: brand_store
+
+  - name: Sailor BD
+    url: https://www.sailor.com.bd
+    trust_tier: B
+    categories: [fashion]
+    scan_paths:
+      - /sale
+    type: brand_store
+
+  - name: Rang BD
+    url: https://www.rang.com.bd
+    trust_tier: B
+    categories: [fashion]
+    scan_paths:
+      - /sale
+    type: brand_store
+
+  - name: Deshal
+    url: https://www.deshal.com
+    trust_tier: B
+    categories: [fashion]
+    scan_paths:
+      - /sale
+    type: brand_store
+
+  - name: Wealthy BD
+    url: https://www.wealthy.com.bd
+    trust_tier: B
+    categories: [fashion]
+    scan_paths:
+      - /sale
+    type: brand_store
+
+  - name: Cat's Eye
+    url: https://www.catseyebd.com
+    trust_tier: B
+    categories: [fashion]
+    scan_paths:
+      - /sale
+    type: brand_store
+
+  - name: Kay Kraft
+    url: https://www.kaykraft.com
+    trust_tier: B
+    categories: [fashion]
+    scan_paths:
+      - /sale
+    type: brand_store
+
+  - name: Ecstasy BD
+    url: https://www.ecstasy.com.bd
+    trust_tier: B
+    categories: [fashion]
+    scan_paths:
+      - /sale
+    type: brand_store
+
+  - name: Lubnan BD
+    url: https://www.lubnan.com.bd
+    trust_tier: B
+    categories: [fashion]
+    scan_paths:
+      - /sale
+    type: brand_store
+
+  - name: Dorjibari
+    url: https://www.dorjibari.com
+    trust_tier: B
+    categories: [fashion]
+    scan_paths:
+      - /sale
+    type: brand_store
+
+  - name: Allen Solly BD
+    url: https://www.allensolly.com.bd
+    trust_tier: B
+    categories: [fashion]
+    scan_paths:
+      - /sale
+    type: brand_store
+
+  - name: Gentle Park
+    url: https://www.gentlepark.com.bd
+    trust_tier: B
+    categories: [fashion]
+    scan_paths:
+      - /sale
+    type: brand_store
+
+  - name: Infinity BD
+    url: https://www.infinity.com.bd
+    trust_tier: B
+    categories: [fashion]
+    scan_paths:
+      - /sale
+    type: brand_store
+
+  # ============================================================
+  # LIFESTYLE — Grooming, wellness, books, daily essentials
+  # ============================================================
+
+  - name: Chaldal
+    url: https://chaldal.com
+    trust_tier: A
+    categories: [lifestyle]
+    scan_paths:
+      - /deals
+    type: marketplace
+
+  - name: Shajgoj
+    url: https://shop.shajgoj.com
+    trust_tier: B
+    categories: [lifestyle]
+    scan_paths:
+      - /sale
+      - /deals
+    type: retailer
+
+  - name: Priyoshop
+    url: https://www.priyoshop.com
+    trust_tier: B
+    categories: [lifestyle]
+    scan_paths:
+      - /deals
+    type: marketplace
+
+  - name: Pandamart
+    url: https://www.foodpanda.com.bd/darkstore
+    trust_tier: A
+    categories: [lifestyle]
+    scan_paths:
+      - /deals
+    type: marketplace
+
+  - name: Rokomari
+    url: https://www.rokomari.com
+    trust_tier: A
+    categories: [lifestyle]
+    scan_paths:
+      - /offer
+      - /book-fair
+    type: retailer
+
+  - name: Spa Ceylon BD
+    url: https://www.spaceylon.com.bd
+    trust_tier: B
+    categories: [lifestyle]
+    scan_paths:
+      - /sale
+    type: brand_store
+
+  - name: The Body Shop BD
+    url: https://www.thebodyshop.com.bd
+    trust_tier: A
+    categories: [lifestyle]
+    scan_paths:
+      - /sale
+    type: brand_store
+
+  - name: Miniso BD
+    url: https://www.miniso.com.bd
+    trust_tier: B
+    categories: [lifestyle]
+    scan_paths:
+      - /sale
+    type: brand_store
+
+  - name: SSS Organic
+    url: https://www.sssorganic.com
+    trust_tier: B
+    categories: [lifestyle]
+    scan_paths:
+      - /offer
+    type: retailer
+
+  - name: Khaasfood
+    url: https://www.khaasfood.com
+    trust_tier: B
+    categories: [lifestyle]
+    scan_paths:
+      - /offer
+    type: retailer
+
+  - name: Netmeds BD
+    url: https://www.netmedsbd.com
+    trust_tier: B
+    categories: [lifestyle]
+    scan_paths:
+      - /offers
+    type: retailer
+
+  - name: Arogga
+    url: https://www.arogga.com
+    trust_tier: B
+    categories: [lifestyle]
+    scan_paths:
+      - /offers
+    type: retailer
+
+  # ============================================================
+  # HOME APPLIANCES — Dedicated appliance sources
+  # ============================================================
+
+  - name: Minister BD
+    url: https://www.minister.com.bd
+    trust_tier: B
+    categories: [home-appliances]
+    scan_paths:
+      - /offer
+    type: brand_store
+
+  - name: Vision Electronics
+    url: https://www.visionelectronics.com.bd
+    trust_tier: B
+    categories: [home-appliances]
+    scan_paths:
+      - /offer
+    type: brand_store
+
+  - name: Butterfly BD
+    url: https://www.butterfly.com.bd
+    trust_tier: B
+    categories: [home-appliances]
+    scan_paths:
+      - /offer
+    type: retailer
+
+  - name: Electra International
+    url: https://www.electra.com.bd
+    trust_tier: B
+    categories: [home-appliances]
+    scan_paths:
+      - /offer
+    type: retailer
+
+  - name: Marcel BD
+    url: https://www.marcelbd.com
+    trust_tier: B
+    categories: [home-appliances, electronics]
+    scan_paths:
+      - /offer
+    type: brand_store
+
+  - name: Transtec BD
+    url: https://www.transtecbd.com
+    trust_tier: B
+    categories: [home-appliances]
+    scan_paths:
+      - /offer
+    type: brand_store
+
+  # ============================================================
+  # HOME DECOR — Furniture, interiors, home styling
+  # ============================================================
+
+  - name: Hatil
+    url: https://www.hatil.com
+    trust_tier: A
+    categories: [home-decor]
+    scan_paths:
+      - /offer
+      - /campaign
+    type: brand_store
+
+  - name: Otobi
+    url: https://www.otobi.com
+    trust_tier: A
+    categories: [home-decor]
+    scan_paths:
+      - /offer
+    type: brand_store
+
+  - name: Regal Furniture
+    url: https://www.regalfurniture.com
+    trust_tier: A
+    categories: [home-decor]
+    scan_paths:
+      - /offer
+    type: brand_store
+
+  - name: Brothers Furniture
+    url: https://www.brothersfurniture.com.bd
+    trust_tier: B
+    categories: [home-decor]
+    scan_paths:
+      - /offer
+    type: brand_store
+
+  - name: Nurjahan Furniture
+    url: https://www.nurjahanfurniture.com
+    trust_tier: B
+    categories: [home-decor]
+    scan_paths:
+      - /offer
+    type: brand_store
+
+  - name: Partex Furniture
+    url: https://www.partexfurniture.com
+    trust_tier: B
+    categories: [home-decor]
+    scan_paths:
+      - /offer
+    type: brand_store
+
+  - name: NavanaFurniture
+    url: https://www.navanafurniture.com
+    trust_tier: B
+    categories: [home-decor]
+    scan_paths:
+      - /offer
+    type: brand_store
+
+  - name: Shomee Home
+    url: https://www.shomee.com.bd
+    trust_tier: B
+    categories: [home-decor, lifestyle]
+    scan_paths:
+      - /sale
+      - /deals
+    type: retailer
+
+  - name: Home Decor BD
+    url: https://www.homedecorbd.com
+    trust_tier: B
+    categories: [home-decor]
+    scan_paths:
+      - /sale
+    type: retailer
+
+  - name: Décor Mart BD
+    url: https://www.decormartbd.com
+    trust_tier: B
+    categories: [home-decor]
+    scan_paths:
+      - /offers
+    type: retailer
+
+  - name: Pepperfry BD
+    url: https://www.pepperfry.com.bd
+    trust_tier: B
+    categories: [home-decor]
+    scan_paths:
+      - /sale
+    type: marketplace
+
+  - name: Wooden BD
+    url: https://www.woodenbd.com
+    trust_tier: B
+    categories: [home-decor]
+    scan_paths:
+      - /offer
+    type: retailer
+
+  # ============================================================
+  # MULTI-CATEGORY — Marketplaces & Aggregators
+  # ============================================================
+
+  - name: Daraz BD
+    url: https://www.daraz.com.bd
+    trust_tier: A
+    categories: [tech, fashion, lifestyle, electronics, home-appliances, home-decor]
+    scan_paths:
+      - /wow/flash-sale/
+      - /deals/
+      - /campaign/
+    type: marketplace
+
+  - name: Othoba
+    url: https://www.othoba.com
+    trust_tier: B
+    categories: [tech, lifestyle, home-appliances, home-decor]
+    scan_paths:
+      - /campaign
+      - /deals
+    type: marketplace
+
+  - name: Ajkerdeal
+    url: https://www.ajkerdeal.com
+    trust_tier: B
+    categories: [tech, fashion, lifestyle, home-appliances, home-decor]
+    scan_paths:
+      - /campaign
+      - /deals
+    type: marketplace
+
+  - name: Bikroy
+    url: https://bikroy.com
+    trust_tier: C
+    categories: [tech, electronics, fashion, home-appliances]
+    scan_paths:
+      - /ad/electronics
+    type: classifieds
+    notes: "User-to-user marketplace. Verify seller reputation."
+
+  - name: Evaly
+    url: https://evaly.com.bd
+    trust_tier: C
+    categories: [tech, fashion, lifestyle]
+    scan_paths:
+      - /deals
+    type: marketplace
+    notes: "Had reliability issues. Verify before buying."
+
+  - name: BD Coupon Hunter
+    url: https://bdcouponhunter.com
+    trust_tier: B
+    categories: [tech, fashion, lifestyle, home-appliances]
+    scan_paths:
+      - /
+    type: aggregator
+    notes: "Coupon/deal aggregator, not a direct seller."
