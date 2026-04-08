@@ -1,0 +1,243 @@
+# Deal Finder BD — Coupon Sources
+# Sites to scrape for promo codes, vouchers, and coupons.
+# Priority: higher = check first during scans.
+
+# ============================================================
+# COUPON AGGREGATORS — Sites that collect coupons from many stores
+# ============================================================
+
+aggregators:
+
+  - name: BD Coupon Hunter
+    url: https://bdcouponhunter.com
+    trust_tier: B
+    priority: 1
+    scan_paths:
+      - /
+      - /coupons
+    notes: "Dedicated BD coupon aggregator"
+
+  - name: CouponBD
+    url: https://www.couponbd.com
+    trust_tier: B
+    priority: 1
+    scan_paths:
+      - /
+      - /stores
+    notes: "BD-focused coupon directory"
+
+  - name: PromocodeBD
+    url: https://www.promocodebd.com
+    trust_tier: B
+    priority: 2
+    scan_paths:
+      - /
+      - /coupons
+    notes: "Promo code aggregator for BD stores"
+
+  - name: OfferBD
+    url: https://www.offerbd.com
+    trust_tier: B
+    priority: 2
+    scan_paths:
+      - /coupons
+      - /promo-codes
+    notes: "Offers and coupon codes for BD"
+
+# ============================================================
+# E-COMMERCE STORE COUPON PAGES — Direct from the stores
+# ============================================================
+
+store_coupon_pages:
+
+  # --- Marketplaces (highest volume of coupons) ---
+
+  - name: Daraz BD
+    url: https://www.daraz.com.bd
+    trust_tier: A
+    priority: 1
+    scan_paths:
+      - /wow/flash-sale/
+      - /campaign/
+      - /vouchers/
+    coupon_patterns:
+      - page: campaign pages, flash sale banners
+      - method: scrape voucher/coupon codes from banners and promo sections
+    categories: [tech, fashion, lifestyle, electronics, home-appliances, home-decor, beauty-cosmetics]
+
+  - name: Ajkerdeal
+    url: https://www.ajkerdeal.com
+    trust_tier: B
+    priority: 2
+    scan_paths:
+      - /campaign
+      - /deals
+      - /coupon
+    coupon_patterns:
+      - page: campaign banners, coupon section
+    categories: [tech, fashion, lifestyle, home-appliances, home-decor, beauty-cosmetics]
+
+  - name: Othoba
+    url: https://www.othoba.com
+    trust_tier: B
+    priority: 2
+    scan_paths:
+      - /campaign
+      - /deals
+    coupon_patterns:
+      - page: campaign pages
+    categories: [tech, lifestyle, home-appliances, home-decor]
+
+  - name: Pickaboo
+    url: https://www.pickaboo.com
+    trust_tier: B
+    priority: 2
+    scan_paths:
+      - /campaign
+      - /deals
+    coupon_patterns:
+      - page: deal banners
+    categories: [tech, electronics]
+
+  - name: Evaly
+    url: https://evaly.com.bd
+    trust_tier: C
+    priority: 3
+    scan_paths:
+      - /deals
+      - /campaign
+    coupon_patterns:
+      - page: promo sections
+    categories: [tech, fashion, lifestyle]
+    notes: "Verify coupon validity — reliability issues."
+
+  # --- Food & Grocery ---
+
+  - name: Chaldal
+    url: https://chaldal.com
+    trust_tier: A
+    priority: 1
+    scan_paths:
+      - /deals
+    coupon_patterns:
+      - page: homepage banners, deal sections
+    categories: [lifestyle]
+
+  - name: Pandamart (foodpanda)
+    url: https://www.foodpanda.com.bd
+    trust_tier: A
+    priority: 1
+    scan_paths:
+      - /vouchers
+      - /deals
+    coupon_patterns:
+      - page: voucher sections, app-only promos
+    categories: [lifestyle]
+    notes: "Many coupons are app-only. Flag those."
+
+  - name: Pathao Food
+    url: https://pathao.com/food
+    trust_tier: B
+    priority: 2
+    scan_paths:
+      - /offers
+    coupon_patterns:
+      - page: offer banners
+    categories: [lifestyle]
+    notes: "Mostly app-only promo codes."
+
+  # --- Fashion & Beauty ---
+
+  - name: Shajgoj
+    url: https://shop.shajgoj.com
+    trust_tier: B
+    priority: 2
+    scan_paths:
+      - /sale
+      - /deals
+    coupon_patterns:
+      - page: sale banners, checkout page promos
+    categories: [beauty-cosmetics, lifestyle]
+
+  - name: Aarong
+    url: https://www.aarong.com
+    trust_tier: A
+    priority: 2
+    scan_paths:
+      - /sale
+    coupon_patterns:
+      - page: seasonal sale pages
+    categories: [fashion, lifestyle]
+
+  # --- Tech ---
+
+  - name: Star Tech
+    url: https://www.startech.com.bd
+    trust_tier: A
+    priority: 1
+    scan_paths:
+      - /special-offer
+      - /campaign
+    coupon_patterns:
+      - page: campaign pages, special offer banners
+    categories: [tech, electronics]
+
+  - name: Ryans Computers
+    url: https://www.ryanscomputers.com
+    trust_tier: A
+    priority: 1
+    scan_paths:
+      - /offer
+      - /campaign
+    coupon_patterns:
+      - page: offer pages
+    categories: [tech, electronics]
+
+  # --- Ride & Services (bonus — users appreciate these) ---
+
+  - name: Pathao Ride
+    url: https://pathao.com
+    trust_tier: B
+    priority: 3
+    scan_paths:
+      - /offers
+    coupon_patterns:
+      - page: ride promo sections
+    categories: [services]
+    notes: "Ride promo codes. Mostly app-only."
+
+  - name: Uber BD
+    url: https://www.uber.com/bd
+    trust_tier: A
+    priority: 3
+    scan_paths:
+      - /offers
+    coupon_patterns:
+      - page: promo page
+    categories: [services]
+    notes: "Ride promo codes. Mostly app-only."
+
+# ============================================================
+# SOCIAL MEDIA & COMMUNITY SOURCES — User-shared codes
+# ============================================================
+
+community:
+
+  - name: Facebook Deal Groups
+    type: social
+    trust_tier: C
+    priority: 3
+    search_queries:
+      - "daraz coupon code site:facebook.com"
+      - "promo code BD site:facebook.com"
+      - "ajkerdeal voucher site:facebook.com"
+    notes: "User-shared codes. Always verify before adding."
+
+  - name: Reddit r/bangladesh
+    type: social
+    trust_tier: C
+    priority: 3
+    search_queries:
+      - "coupon code site:reddit.com/r/bangladesh"
+      - "promo BD site:reddit.com"
+    notes: "Occasional coupon shares. Low volume."

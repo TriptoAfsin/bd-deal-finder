@@ -2,7 +2,7 @@
 
 ## What is deal-finder
 
-AI-powered Bangladeshi deal finder built on Claude Code: scans 60+ BD e-commerce sources, scores deals on a 4-axis system, and surfaces the best finds across Tech, Electronics, Fashion, Lifestyle, Home Appliances, and more.
+AI-powered Bangladeshi deal finder built on Claude Code: scans 60+ BD e-commerce sources, scores deals on a 4-axis system, and surfaces the best finds across Tech, Electronics, Fashion, Lifestyle, Home Appliances, Beauty & Cosmetics, and more. Includes a coupon finder that scrapes promo codes from popular BD e-commerce sites and aggregators.
 
 Currency: BDT only. Market: Bangladesh only.
 
@@ -14,7 +14,9 @@ Currency: BDT only. Market: Bangladesh only.
 | `data/top-deals.md` | Curated top deals (score ≥ 4.0) |
 | `data/watchlist.md` | Keywords/products being watched |
 | `data/scan-history.tsv` | Scanner dedup history |
+| `data/coupons.md` | Active & expired coupon codes |
 | `config/sources.yml` | All BD sources with metadata |
+| `config/coupon-sources.yml` | Coupon aggregators & store coupon pages |
 | `config/profile.yml` | User preferences, budgets, interests |
 | `categories/*.yml` | Per-category sources, keywords, budgets, brands |
 | `scripts/merge-deals.mjs` | Merge scan results into deals.md |
@@ -46,7 +48,7 @@ If `config/sources.yml` is missing, copy from `templates/sources.example.yml`:
 > "I've loaded 60+ curated BD e-commerce sources. Want me to adjust anything — add/remove sources, change trust tiers?"
 
 ### Step 3: Data files
-Ensure `data/deals.md`, `data/top-deals.md`, and `data/watchlist.md` exist with headers.
+Ensure `data/deals.md`, `data/top-deals.md`, `data/watchlist.md`, and `data/coupons.md` exist with headers.
 
 ### Step 4: Ready
 > "You're all set! You can now:
@@ -54,7 +56,9 @@ Ensure `data/deals.md`, `data/top-deals.md`, and `data/watchlist.md` exist with 
 > - Say 'find me [product]' to search on-demand
 > - Say 'watch [product] under [price]' to add to your watchlist
 > - Say 'top deals' to see the best current finds
-> - Say 'compare [product]' to compare prices across sites"
+> - Say 'compare [product]' to compare prices across sites
+> - Say 'coupons' to find active promo codes across BD stores
+> - Say 'coupons for [store]' to find codes for a specific store"
 
 ---
 
@@ -68,6 +72,8 @@ Ensure `data/deals.md`, `data/top-deals.md`, and `data/watchlist.md` exist with 
 | Asks "top deals" or "what's hot" | `top` |
 | Says "watch X under Y" | `watch` |
 | Asks about deal history or tracked deals | `tracker` |
+| Says "coupons", "promo codes", or "vouchers" | `coupons` |
+| Says "coupons for [store]" | `coupons` (store-specific) |
 
 ---
 
@@ -143,6 +149,22 @@ Ensure `data/deals.md`, `data/top-deals.md`, and `data/watchlist.md` exist with 
 ### Watchlist Priority
 - During scans, always check watchlist matches FIRST.
 - Watchlist matches with score ≥ 3.5 get flagged prominently in results.
+
+### Coupon Finder Rules
+- **Sources:** Load from `config/coupon-sources.yml`. Scan aggregators first (priority 1), then store pages, then community.
+- **Verification:** ALWAYS verify coupons via Playwright — navigate to the store, attempt to apply the code at checkout (or check the promo page) before marking as `Verified`.
+- **Batch mode exception:** Use WebFetch, mark as `Unverified (batch mode)`.
+- **NEVER fabricate coupon codes.** Only report codes found from actual scraping.
+- **Dedup:** Same code + same store within 24h = skip. Check `data/coupons.md` active section first.
+- **Expiry tracking:** If a coupon has a known expiry date, record it. Check and move expired coupons to the "Expired / Used" section.
+- **App-only codes:** Flag with `(app-only)` in the discount column — still useful, but user should know.
+- **Community-sourced codes (tier C):** Always mark as `Unverified` until confirmed via Playwright.
+- **During deal scans:** If a coupon is found that stacks with an active deal, note it in the deal entry.
+- **Output format for `data/coupons.md`:**
+  - `#`: sequential, 3-digit zero-padded
+  - `Type`: one of `percentage`, `flat`, `free-shipping`, `cashback`, `bogo`
+  - `Verified`: `Yes`, `No`, or `Unverified`
+  - `Min. Spend`: minimum order value, or `-` if none
 
 ---
 
