@@ -1,0 +1,76 @@
+category: beauty-cosmetics
+description: "Skincare, makeup, haircare, fragrances, beauty tools & cosmetics"
+
+keywords:
+  positive:
+    - skincare, moisturizer, sunscreen, serum, face wash, cleanser
+    - toner, essence, sheet mask, face mask, exfoliator, scrub
+    - foundation, concealer, primer, setting spray, setting powder
+    - lipstick, lip gloss, lip liner, lip balm
+    - mascara, eyeliner, eyeshadow, eye primer, brow pencil
+    - blush, bronzer, highlighter, contour
+    - compact powder, BB cream, CC cream
+    - makeup brush, beauty blender, sponge, makeup kit
+    - nail polish, nail art, nail care
+    - shampoo, conditioner, hair serum, hair oil, hair mask
+    - hair dryer, straightener, curler, hair tools
+    - perfume, fragrance, body mist, attar, cologne
+    - deodorant, body spray, roll-on
+    - body lotion, body butter, body wash, shower gel
+    - face cream, night cream, anti-aging, retinol, vitamin C serum
+    - micellar water, makeup remover, cleansing balm
+    - derma roller, jade roller, gua sha, beauty device
+    - lash extensions, false lashes, lash glue
+    - hair color, hair dye, henna
+  negative:
+    - expired, near-expiry, damaged packaging
+    - counterfeit, fake, replica, first copy
+    - used, opened, sample size only
+
+budget:
+  default_max: 10000
+  segments:
+    skincare: 5000          # cleansers, moisturizers, sunscreen
+    premium_skincare: 10000 # serums, treatments, sets
+    makeup: 5000            # everyday makeup
+    premium_makeup: 12000   # palettes, branded sets
+    haircare: 3000          # shampoo, conditioner, oils
+    fragrance: 8000         # perfumes, attars
+    tools: 5000             # brushes, devices, dryers
+    body_care: 3000         # lotions, body wash, scrubs
+
+brands:
+  tier_1:
+    - L'Oreal
+    - Maybelline
+    - Garnier
+    - Neutrogena
+    - CeraVe
+    - Cetaphil
+    - The Body Shop
+    - MAC
+    - NYX
+    - Clinique
+    - Estee Lauder
+    - Olay
+    - Nivea
+    - Dove
+    - Revlon
+  tier_2:
+    - Shajgoj
+    - Spa Ceylon
+    - Himalaya
+    - Mamaearth
+    - Biotique
+    - Lakme
+    - Pond's
+    - Simple
+    - The Ordinary
+    - COSRX
+    - Innisfree
+    - Missha
+    - Dear Me Beauty
+    - BioAqua
+    - Miniso
+    - Focallure
+    - Essence (cosmetics)

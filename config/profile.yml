@@ -13,6 +13,7 @@ categories_of_interest:
   - lifestyle
   - home-appliances
   - home-decor
+  - beauty-cosmetics
 
 budgets:
   # Maximum you'd typically spend per category (in BDT)
@@ -63,6 +64,17 @@ budgets:
       storage: 15000
       small_furniture: 25000
       large_furniture: 80000
+  beauty-cosmetics:
+    default_max: 10000
+    segments:
+      skincare: 5000
+      premium_skincare: 10000
+      makeup: 5000
+      premium_makeup: 12000
+      haircare: 3000
+      fragrance: 8000
+      tools: 5000
+      body_care: 3000
 
 scan:
   interval: "12h"

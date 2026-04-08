@@ -382,15 +382,6 @@ sources:
       - /deals
     type: marketplace
 
-  - name: Shajgoj
-    url: https://shop.shajgoj.com
-    trust_tier: B
-    categories: [lifestyle]
-    scan_paths:
-      - /sale
-      - /deals
-    type: retailer
-
   - name: Priyoshop
     url: https://www.priyoshop.com
     trust_tier: B
@@ -415,30 +406,6 @@ sources:
       - /offer
       - /book-fair
     type: retailer
-
-  - name: Spa Ceylon BD
-    url: https://www.spaceylon.com.bd
-    trust_tier: B
-    categories: [lifestyle]
-    scan_paths:
-      - /sale
-    type: brand_store
-
-  - name: The Body Shop BD
-    url: https://www.thebodyshop.com.bd
-    trust_tier: A
-    categories: [lifestyle]
-    scan_paths:
-      - /sale
-    type: brand_store
-
-  - name: Miniso BD
-    url: https://www.miniso.com.bd
-    trust_tier: B
-    categories: [lifestyle]
-    scan_paths:
-      - /sale
-    type: brand_store
 
   - name: SSS Organic
     url: https://www.sssorganic.com
@@ -522,6 +489,86 @@ sources:
     categories: [home-appliances]
     scan_paths:
       - /offer
+    type: brand_store
+
+  # ============================================================
+  # BEAUTY & COSMETICS — Skincare, makeup, haircare, fragrances
+  # ============================================================
+
+  - name: Shajgoj
+    url: https://shop.shajgoj.com
+    trust_tier: B
+    categories: [beauty-cosmetics, lifestyle]
+    scan_paths:
+      - /sale
+      - /deals
+    type: retailer
+
+  - name: The Body Shop BD
+    url: https://www.thebodyshop.com.bd
+    trust_tier: A
+    categories: [beauty-cosmetics, lifestyle]
+    scan_paths:
+      - /sale
+    type: brand_store
+
+  - name: Spa Ceylon BD
+    url: https://www.spaceylon.com.bd
+    trust_tier: B
+    categories: [beauty-cosmetics, lifestyle]
+    scan_paths:
+      - /sale
+    type: brand_store
+
+  - name: Glamour World
+    url: https://www.glamourworld.com.bd
+    trust_tier: B
+    categories: [beauty-cosmetics]
+    scan_paths:
+      - /offers
+      - /deals
+    type: retailer
+
+  - name: Beautyglam BD
+    url: https://www.beautyglam.com.bd
+    trust_tier: B
+    categories: [beauty-cosmetics]
+    scan_paths:
+      - /sale
+      - /offers
+    type: retailer
+
+  - name: Cosmetics BD
+    url: https://www.cosmeticsbd.com
+    trust_tier: B
+    categories: [beauty-cosmetics]
+    scan_paths:
+      - /sale
+      - /offers
+    type: retailer
+
+  - name: Beautified You
+    url: https://www.beautifiedyou.com
+    trust_tier: B
+    categories: [beauty-cosmetics]
+    scan_paths:
+      - /sale
+    type: retailer
+
+  - name: Glam Up BD
+    url: https://www.glamupbd.com
+    trust_tier: C
+    categories: [beauty-cosmetics]
+    scan_paths:
+      - /offers
+    type: retailer
+
+  - name: Miniso BD
+    url: https://www.miniso.com.bd
+    trust_tier: B
+    categories: [beauty-cosmetics, lifestyle]
+    scan_paths:
+      - /sale
     type: brand_store
 
   # ============================================================
@@ -633,7 +680,7 @@ sources:
   - name: Daraz BD
     url: https://www.daraz.com.bd
     trust_tier: A
-    categories: [tech, fashion, lifestyle, electronics, home-appliances, home-decor]
+    categories: [tech, fashion, lifestyle, electronics, home-appliances, home-decor, beauty-cosmetics]
     scan_paths:
       - /wow/flash-sale/
       - /deals/
@@ -652,7 +699,7 @@ sources:
   - name: Ajkerdeal
     url: https://www.ajkerdeal.com
     trust_tier: B
-    categories: [tech, fashion, lifestyle, home-appliances, home-decor]
+    categories: [tech, fashion, lifestyle, home-appliances, home-decor, beauty-cosmetics]
     scan_paths:
       - /campaign
       - /deals
