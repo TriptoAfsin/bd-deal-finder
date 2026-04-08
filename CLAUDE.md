@@ -122,6 +122,13 @@ Ensure `data/deals.md`, `data/top-deals.md`, `data/watchlist.md`, and `data/coup
 - **NEVER fabricate or estimate prices.** All prices must come from actual scraping.
 - **NEVER hallucinate deals.** If a source can't be scraped, skip it and note the failure.
 
+### Links Are Mandatory
+- **EVERY deal shown to the user MUST include a clickable link** to the product page.
+- This applies to ALL modes: `scan`, `search`, `compare`, `top`, `coupons` — no exceptions.
+- Format: `[Store Name](product-url)` in markdown so it renders as a clickable link.
+- If a product URL cannot be obtained, still show the store's base URL so the user can navigate manually.
+- In tables, the Source or Link column must always be a clickable markdown link, never plain text.
+
 ### Verification
 - **ALWAYS use Playwright** to verify deals — navigate to URL + snapshot the page.
 - Don't trust WebSearch/WebFetch for price or availability data.
