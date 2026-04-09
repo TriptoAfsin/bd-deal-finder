@@ -371,6 +371,43 @@ sources:
     type: brand_store
 
   # ============================================================
+  # FOOTWEAR — BD shoe brands & retailers
+  # ============================================================
+
+  - name: Apex
+    url: https://apex4u.com
+    trust_tier: A
+    categories: [fashion]
+    scan_paths:
+      - /super-deals
+      - /category/upto60-off
+      - /category/men-footwear
+      - /category/men-formal-shoes
+      - /category/men-casual-shoes
+    type: brand_store
+
+  - name: Bata BD
+    url: https://www.batabd.com
+    trust_tier: A
+    categories: [fashion]
+    scan_paths:
+      - /collections/flat-50-off
+      - /collections/new-arrivals
+      - /collections/men
+      - /collections/casual-shoes
+    type: brand_store
+
+  - name: Bay Emporium
+    url: https://www.amarbay.com
+    trust_tier: B
+    categories: [fashion]
+    scan_paths:
+      - /products
+      - /en/products/category/men-casual-4/
+      - /product/categories?category=men+dress-7685
+    type: brand_store
+
+  # ============================================================
   # LIFESTYLE — Grooming, wellness, books, daily essentials
   # ============================================================
 
