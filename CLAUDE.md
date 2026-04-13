@@ -130,9 +130,12 @@ Ensure `data/deals.md`, `data/top-deals.md`, `data/watchlist.md`, and `data/coup
 - In tables, the Source or Link column must always be a clickable markdown link, never plain text.
 
 ### Verification
-- **ALWAYS use Playwright** to verify deals — navigate to URL + snapshot the page.
+- **ALWAYS use the Playwright CLI via `npx playwright`** to verify deals — launch a headless browser, navigate to URL, snapshot the page (screenshot or DOM dump). Do NOT rely on the Chrome MCP extension; the CLI is the canonical path.
+  - Quick recipe: write a tiny script (e.g. `batch/verify-{slug}.mjs`) that imports `@playwright/test` or `playwright`, navigates, and dumps price/title/stock to stdout or a JSON file. Run with `npx playwright install chromium` once, then `node batch/verify-*.mjs`.
+  - For ad-hoc one-offs: `npx playwright codegen <url>` or `npx -y playwright screenshot <url> out.png` are fine.
 - Don't trust WebSearch/WebFetch for price or availability data.
 - **Exception for batch mode (`claude -p`):** Use WebFetch as fallback, mark deal with `**Verification:** unconfirmed (batch mode)`.
+- If Playwright CLI is unavailable for any reason, fall back to WebFetch and mark `**Verification:** unconfirmed (no Playwright)`.
 
 ### Dedup
 - Same URL + same source + same price seen within 24 hours = skip.
