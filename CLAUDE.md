@@ -130,12 +130,21 @@ Ensure `data/deals.md`, `data/top-deals.md`, `data/watchlist.md`, and `data/coup
 - In tables, the Source or Link column must always be a clickable markdown link, never plain text.
 
 ### Verification
-- **ALWAYS use the Playwright CLI via `npx playwright`** to verify deals — launch a headless browser, navigate to URL, snapshot the page (screenshot or DOM dump). Do NOT rely on the Chrome MCP extension; the CLI is the canonical path.
-  - Quick recipe: write a tiny script (e.g. `batch/verify-{slug}.mjs`) that imports `@playwright/test` or `playwright`, navigates, and dumps price/title/stock to stdout or a JSON file. Run with `npx playwright install chromium` once, then `node batch/verify-*.mjs`.
-  - For ad-hoc one-offs: `npx playwright codegen <url>` or `npx -y playwright screenshot <url> out.png` are fine.
-- Don't trust WebSearch/WebFetch for price or availability data.
+- **ALWAYS use the `@playwright/cli` package via `npx -y @playwright/cli@latest <cmd>`** to verify deals. NEVER write a custom Node/Playwright script for verification — use the CLI subcommands directly.
+  - Canonical flow:
+    ```
+    npx -y @playwright/cli@latest goto <url>
+    npx -y @playwright/cli@latest eval "JSON.stringify({h1: document.querySelector('h1')?.innerText, prices: (document.body.innerText.match(/৳\s*[\d,]{4,}/g)||[]).slice(0,15), stock: (document.body.innerText.match(/in stock|out of stock|pre[- ]?order|sold out/i)||[])[0]})"
+    npx -y @playwright/cli@latest snapshot          # for accessibility tree
+    npx -y @playwright/cli@latest screenshot <ref>  # if visual confirmation needed
+    npx -y @playwright/cli@latest close
+    ```
+  - Session persists across CLI invocations. Use `-s=<session>` to run multiple parallel sessions.
+  - Reference: https://github.com/microsoft/playwright-cli (deprecated; supplanted by `@playwright/cli` on npm)
+- Do NOT rely on the Chrome MCP extension (`mcp__claude-in-chrome__*`) — it's frequently disconnected.
+- Don't trust WebSearch/WebFetch for price or availability data — use them only to discover URLs, not to verify prices.
 - **Exception for batch mode (`claude -p`):** Use WebFetch as fallback, mark deal with `**Verification:** unconfirmed (batch mode)`.
-- If Playwright CLI is unavailable for any reason, fall back to WebFetch and mark `**Verification:** unconfirmed (no Playwright)`.
+- If `@playwright/cli` is unavailable for any reason, fall back to WebFetch and mark `**Verification:** unconfirmed (no Playwright)`.
 
 ### Dedup
 - Same URL + same source + same price seen within 24 hours = skip.

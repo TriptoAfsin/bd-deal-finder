@@ -85,11 +85,38 @@ sources:
     type: retailer
 
   - name: Apple Gadgets
-    url: https://www.applegadgets.com.bd
+    url: https://www.applegadgetsbd.com
     trust_tier: B
     categories: [tech, electronics]
     scan_paths:
       - /offer
+    type: retailer
+
+  - name: Sumash Tech
+    url: https://www.sumashtech.com
+    trust_tier: B
+    categories: [tech, electronics]
+    notes: "Carries unofficial / regional iPhone variants (Japan, USA, HK, Singapore, Global) — international warranty only"
+    scan_paths:
+      - /offer
+      - /category/smartphone-iphone
+    type: retailer
+
+  - name: Jack N Gadget
+    url: https://www.facebook.com/JackNGadget1/
+    trust_tier: C
+    categories: [tech]
+    notes: "Facebook-only store (Bashundhara City). Hotline 01973-768485. Carries unofficial iPhones — verify pricing in DMs."
+    scan_paths: []
+    type: retailer
+
+  - name: Dazzle
+    url: https://dazzle.com.bd
+    trust_tier: B
+    categories: [tech, electronics]
+    notes: "Sells JP/MEA (Japan / Middle East-Africa) iPhone SKUs — unofficial / non-BD-warranty"
+    scan_paths:
+      - /collections/all
     type: retailer
 
   - name: Pickaboo
